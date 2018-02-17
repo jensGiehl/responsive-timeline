@@ -1,18 +1,11 @@
-FROM node:alpine
+FROM node:latest
 
 ENV WORK_DIR=/opt/work
 
-RUN apk update && apk upgrade && apk --update add \
-    ruby ruby-irb ruby-rake ruby-io-console ruby-bigdecimal ruby-json ruby-bundler \
-    libstdc++ tzdata bash ca-certificates autoconf \
-    &&  echo 'gem: --no-document' > /etc/gemrc
+RUN mkdir -p $WORK_DIR && npm install --global gulp-cli
 
-RUN mkdir -p $WORK_DIR
+RUN apt-get -yq update && apt-get -yq install ruby ruby-dev
+
+RUN gem install sass --no-user-install
 
 WORKDIR $WORK_DIR
-
-# Add IP address to hosts --> this avoid EAI_AGAIN errors
-RUN echo "151.101.128.162 registry.npmjs.org" >> /etc/hosts && \
-    npm i -g gulp && \
-    gem install sass && \ 
-    rm -rf /tmp/*
