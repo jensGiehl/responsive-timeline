@@ -34,6 +34,10 @@ $timeline-color: #ee4d4d;
 		display: table;
 		width: 100%;
 	}
+
+	.time {
+		font-style: italic;
+	}
 	
 	.timeline-item {
 		margin-bottom: 50px;
@@ -53,8 +57,8 @@ $timeline-color: #ee4d4d;
 
 			img {
 				position: relative;
-				top: 14px;
-				left: 14px;
+				top: 4px;
+				left: 1px;
 			}
 		}
 
