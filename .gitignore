@@ -3,6 +3,7 @@
 *.log
 *.map
 *.swp
+*.svg
 assets/
 index.html
 
