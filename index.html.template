@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
 	<meta charset="UTF-8">
-	<title>Bruno Rodrigues - Responsive Timeline</title>
+	<title>{{AUTHOR_FIRSTNAME}} {{AUTHOR_LASTNAME}} - {{TITLE}}</title>
 	<meta name="viewport" content="width=device-width, minimum-scale= 1.0, initial-scale= 1.0">
 	
 	<!-- stylesheets -->
@@ -14,17 +14,13 @@
 	<header>
 		<div class="container">
 			<h1 class="logo">
-				BRUNO<span>RODRIGUES</span>
+				{{AUTHOR_FIRSTNAME}}<span>{{AUTHOR_LASTNAME}}</span>
 			</h1>
-			<section class="social">
-				<a class="btn" href="http://www.github.com/brunodsgn">Github</a>
-				<a class="btn" href="http://www.twitter.com/_brunoweb">Twitter</a>
-			</section>
 		</div>
 	</header>
 
 	<div class="container">
-		<h1 class="project-name">RESPONSIVE TIMELINE</h1>
+		<h1 class="project-name">{{TITLE}}</h1>
 
 		<!-- Timeline begin here -->
 		<div id="timeline">

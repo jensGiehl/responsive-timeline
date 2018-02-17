@@ -3,6 +3,7 @@
 *.log
 *.map
 assets/
+index.html
 
 # Node modules
 node_modules/
