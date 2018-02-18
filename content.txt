@@ -1,3 +1,0 @@
-book.svg;Test #1;Ein langer langer <b>TEST</b>
-star.svg;Test #2;Huhu
-star.svg;Test #3;Yes!
